@@ -12,3 +12,12 @@ exports.answer = function (req, res) {
     res.render('quizes/answer', {respuesta: 'Incorrecto'});
   }
 };
+
+// GET /author
+exports.author = function (req, res) {
+  var data = {
+    name: 'Juan Diego Gonzalez Gallardo',
+    picture: '/images/profile.png'
+  };
+  res.render('quizes/author', data);
+};
